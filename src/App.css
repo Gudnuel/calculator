@@ -1,0 +1,25 @@
+body{
+  background-color: black;
+  color:white;
+  padding: 0px;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover{
+  border-radius:16px;
+  background-color: gray;
+  
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-;
+  background-color: antiquewhite;
+  width:300px;
+  /* border-radius:16px; */
+}

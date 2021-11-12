@@ -1,25 +1,49 @@
-body{
-  background-color: black;
-  color:white;
-  padding: 0px;
-}
-
-.App {
+.house{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color:rgb(72, 87, 114) ;
+  color:white;
 }
 .cover{
   border-radius:16px;
-  background-color: gray;
-  
+  background-color: rgb(15, 10, 10);
+  padding: 9px;
 }
-
 .row{
   display: flex;
   flex-direction: row;
-  justify-content: space-;
+  justify-content: space-around;
   background-color: antiquewhite;
-  width:300px;
-  /* border-radius:16px; */
+  width:300px
+}
+.calculate{
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    width: 500px;
+  }
+}
+@media (max-width: 760px) {
+  .row {
+    width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .row {
+    width: 268px;
+  }
+}
+@media (max-width: 280px) {
+  .row {
+    width: 250px;
+  }
 }

@@ -5,19 +5,37 @@
     align-items: flex-end;
     width: 300px;
     color:black;
-    /* text-align: right; */
-    height: 10em;
-    padding: 10px;
+    height: 8em;
+    padding: 10px
 }
 
 .result{
     flex: 1;
-    font-size: 20px;
-    
+    font-size: 14px;
 }
 
 .text{
     flex: 1;
-    font-size: 16px;
-    
+    font-size: 10px;
 }
+@media (max-width: 1024px) {
+    .inputCloth {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .inputCloth {
+      width: 300px;
+    }
+  }
+  @media (max-width: 300px) {
+    .inputCloth {
+      width: 268px;
+    }
+  }
+  @media (max-width: 280px) {
+    .inputCloth {
+      width: 250px;
+    }
+  }

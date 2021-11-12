@@ -8,9 +8,7 @@ import * as math from "mathjs";
 const App = () => {
   const [text, setText] = useState(" ")
   const [result, setResult] = useState(" ")
-  // const inputRef = useRef(null);
-
-  // const focusMe = () => {inputRef.current.focus()}; 
+ 
   const addText=(value) => {
     setText(text.concat(value));
       
@@ -50,8 +48,12 @@ const App = () => {
 
   const buttonColor='#f2a33c'
   return (
-    <div className="App">
-      <div className='cover'>
+
+     <div className="house" >
+        <div className='cover'>
+        <div className="calculate"> 
+          <h3>Calculator</h3>
+          </div>
         <div className='row'> 
           <Input  text={text} result={result}/>
         </div>
@@ -84,7 +86,8 @@ const App = () => {
            <Button symbol='C' handleChange={backSpace}/>
         </div>
         </div>
-    </div>
+      </div>
+
   );
 }
 

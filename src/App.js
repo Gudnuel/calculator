@@ -11,7 +11,12 @@ const App = () => {
  
   const addText=(value) => {
     setText(text.concat(value));
-      
+      if (text.length === 18) {
+        setResult("Max input reached");
+      };
+      if (text.length === 21) {
+        restInput() 
+      }
   }; 
 
   const calculateInput = () =>{
@@ -34,11 +39,15 @@ const App = () => {
       setResult(jump)
           if ( jump === Infinity ){
           return setResult("NAN")
-           }                
+           } 
+           if (result.length >= 15){
+            setResult('result > value');
+          }              
   };
  
   function backSpace() {
     setText(text.slice(0,-1));
+
   };
 
     const restInput = () =>{
